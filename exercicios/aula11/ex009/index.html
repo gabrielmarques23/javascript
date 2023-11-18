@@ -1,25 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nativo/Estrangeiro</title>
 </head>
+<style>
+    body {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+</style>
+
 <body>
-    
+
+    <h1>Você nasceu em que país?</h1>
+
+    País: <input type="text" name="txtpais" id="itxtpais" placeholder="Digite aqui" size="30" required>
+    <input type="submit" value="Enviar" onclick="resultado()">
+    <br><br>
+
+    <div id="res">Resultado</div>
+
+
+    <script>
+
+
+        function resultado() {
+
+            var txtp = window.document.getElementById('itxtpais');
+            var res = window.document.getElementById('res');
+            var país = (txtp.value);
+
+
+            if (país !== 'brasil') {
+                res.innerHTML =(`Você é da/o <strong>${país}</strong>, então você é <strong>estrangeiro</strong>. Tenha um ótimo dia!  :)`);
+            } else {
+                res.innerHTML = `Você é da/o <strong>${país}</strong>. Tenha um ótimo dia!  :)`;
+            }
+
+        }
+
+
+    </script>
+
 </body>
+
 </html>
-<h1>Você nasceu em que país?</h1>
-País: <input type="text" name="txtpais" id="txtpais" placeholder="Digite aqui o seu país" size="25">
-
-<input type="button" value="Enviar">
-
-<script>
-var país = 'Brasil';
-console.log(`Vivendo em ${país}`);
-if (país == 'Brasil') {
-    console.log('Você é Brasileiro!');
-}else {
-    console.log('Você é Estrangeiro');
-}
-</script>
