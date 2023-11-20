@@ -25,22 +25,22 @@
 
     <script>
 
-
         function resultado() {
 
             var txtp = window.document.getElementById('itxtpais');
             var res = window.document.getElementById('res');
-            var país = (txtp.value);
-
-
-            if (país !== 'brasil') {
-                res.innerHTML =(`Você é da/o <strong>${país}</strong>, então você é <strong>estrangeiro</strong>. Tenha um ótimo dia!  :)`);
+            var país = String(txtp.value);
+            
+            console.log
+            
+            if (país !== 'Brasil') {
+                res.innerHTML += `Você é da/o <strong>${país}</strong>, então você é <strong>estrangeiro</strong>.`;
             } else {
-                res.innerHTML = `Você é da/o <strong>${país}</strong>. Tenha um ótimo dia!  :)`;
+                res.innerHTML += `Você é da/o <strong>${país}</strong>, então você é nativo`;
             }
-
+            
         }
-
+        
 
     </script>
 
