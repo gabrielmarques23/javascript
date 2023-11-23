@@ -1,25 +1,37 @@
 @charset "UTF-8";
 
-body{
-background-color: rgb(113, 175, 255);
-font-family: Arial, Helvetica, sans-serif;
+body {
+    background-color: #71afff;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
+header {
     color: white;
     text-align: center;
+    padding: 10px;
 }
 
-section{
+section {
     background-color: white;
     margin: auto;
     padding: 15px;
     border-radius: 15px;
-    width: 500px;
+    width: 450px;
     box-shadow: 3px 3px 8px rgba(34, 34, 34, 0.473);
+    margin: auto
 }
 
-footer{
+div#res {
+    text-align: center;
+    padding-top: 20px;
+}
+
+div > img#foto {
+    display: block;
+    margin: auto;
+}
+
+footer {
     color: white;
     text-align: center;
     font-style: italic;
