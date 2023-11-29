@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antes e Depois</title>
+</head>
+<style>
+    body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    input#res {
+        background-color: #d8d8d8;
+        padding: 20px;
+
+        font-size: medium;
+        font-weight: bold;
+
+        border-radius: 15px;
+        border: 0px;
+    }
+
+    input#res:hover {
+        background-color: #afafaf;
+        box-shadow: none;
+        transition: linear .3s;
+    }
+</style>
+
+<body>
+    <h1>Antes e depois</h1>
+
+    <input id="res" type="button" value="Antecessor e Sucessor" onclick="calcular()">
+
+    <script>
+
+        function calcular() {
+
+
+            let num = Number.parseInt(window.prompt(`Escolha qualquer número inteiro`));
+
+            let som = num + 1;
+            let men = num - 1;
+
+            if (num <= 0) {
+                window.alert(`[ERRO] Válido acima de 1`);
+            } else {
+                alert(`Antes de ${num}, temos o número ${men}.  Depois de ${num}, temos o número ${som}`);
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
