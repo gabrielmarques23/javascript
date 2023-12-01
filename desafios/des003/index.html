@@ -38,16 +38,20 @@
 
         function calcular() {
 
-
             let num = Number.parseInt(window.prompt(`Escolha qualquer número inteiro`));
 
-            let som = num + 1;
-            let men = num - 1;
+            let n = num;
+            let s = num - 1;
+            let a = num + 1;
 
-            if (num <= 0) {
+
+            if (isNaN(num)) {
+                window.alert('[ERRO] Digite um número!');
+            }else if (n <= 0) {
                 window.alert(`[ERRO] Válido acima de 1`);
+
             } else {
-                alert(`Antes de ${num}, temos o número ${men}.  Depois de ${num}, temos o número ${som}`);
+                alert(`Antes de ${n}, temos o número ${s}.  Depois de ${n}, temos o número ${a}`);
             }
         }
 
